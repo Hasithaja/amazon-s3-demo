@@ -34,10 +34,10 @@ public class Starter implements CommandLineRunner {
                 .build();
 
         listBuckets(s3);
-//        createBucket(s3, bucketName);
-//        putObject(s3, bucketName, objectKey, objectContent);
-//        listObjects(s3, bucketName);
-//        getObject(s3, bucketName, objectKey);
+        createBucket(s3, bucketName);
+        putObject(s3, bucketName, objectKey, objectContent);
+        listObjects(s3, bucketName);
+        getObject(s3, bucketName, objectKey);
     }
 
     private void createBucket(AmazonS3 s3, String bucketName) {
